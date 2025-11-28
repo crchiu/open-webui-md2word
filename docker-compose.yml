@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  md2word:
+    build: .
+    container_name: md2word
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    environment:
+      - TZ=Asia/Taipei
+    volumes:
+      # 放 Google Cloud Storage service account JSON
+      - ./sstc-aiteam-88133bbdce80.json:/secrets/service-account.json:ro
+      # 如果你需要 Pandoc reference.docx
+      - ./pandoc_code:/pandoc_code:ro

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+requests
+python-multipart
+pydantic
+
+google-cloud-storage
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
