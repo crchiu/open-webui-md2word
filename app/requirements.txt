@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+requests
+# 後續如果你要真的上傳 Google Drive，再加：
+# google-api-python-client
+# google-auth
+# google-auth-httplib2
+# google-auth-oauthlib
